@@ -4,7 +4,7 @@ This repo consists of examples for creating Bar Charts and Pie Charts using D3.j
 
 ## Dependencies
 
-d3 : https://github.com/d3/d3/wiki 
+d3 : https://github.com/d3/d3/wiki <br />
 react <br />
 react-bootstrap <br />
 react-dom <br />
