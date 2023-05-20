@@ -39,16 +39,13 @@ export default class Pie extends React.Component {
                     _pieData[d.pestle] = (_pieData[d.pestle] == null ? 0 : _pieData[d.pestle] + 1);
                 }
             })
-            console.log(_pieData);
             pestles.map(d => {
                 data[i].pieValue = '' + _pieData[d];
                 data[i].piePestle = d;
                 i++;
             })
             const DATA = data.slice(0, i);
-            console.log(DATA)
             var data_ready = pie().sort(null).value(d => d.pieValue)(DATA)
-            console.log(data_ready)
 
             const colors = scaleOrdinal(schemeCategory10);
             const segments = arc()
